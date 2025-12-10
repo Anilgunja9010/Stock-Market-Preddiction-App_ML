@@ -29,7 +29,9 @@ label { color: white !important; }
 """, unsafe_allow_html=True)
 
 # LOAD MODEL 
-model = load_model("../Stock_Predictions_Model.keras")
+import os
+model_path = os.path.join(os.path.dirname(os.path.dirname(_file_)), "Stock_Predictions_Model.keras")
+model = load_model(model_path)
 
 # ------------------ TITLE ------------------
 st.markdown("""
