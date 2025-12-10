@@ -6,6 +6,12 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 
+import os
+import streamlit as st
+
+st.write("CURRENT DIRECTORY:", os.getcwd())
+st.write("FILES IN THIS DIRECTORY:", os.listdir())
+
 # ------------------ PAGE CONFIG (FIRST LINE AFTER IMPORTS) ------------------
 st.set_page_config(page_title="Stock Market Predictor", layout="centered")
 
