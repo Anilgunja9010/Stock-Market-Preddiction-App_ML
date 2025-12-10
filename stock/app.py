@@ -22,8 +22,8 @@ label { color: white !important; }
 </style>
 """, unsafe_allow_html=True)
 
-# ------------------ LOAD MODEL (✅ FIXED) ------------------
-model = load_model("Stock_Predictions_Model.keras")
+# LOAD MODEL 
+model = load_model("../Stock_Predictions_Model.keras")
 
 # ------------------ TITLE ------------------
 st.markdown("""
